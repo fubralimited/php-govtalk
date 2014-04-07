@@ -2,7 +2,6 @@
     "name": "justinbusschau/php-govtalk",
     "type": "library",
     "description": "A library for applications which interface with the UK Government Gateway",
-    "version": "0.1",
     "homepage": "https://github.com/justinbusschau/php-govtalk",
     "license": "GPLv3",
     "authors": [
@@ -16,7 +15,7 @@
         }
     ],
     "autoload": {
-        "psr-0": { "GovTalk\\" : "src/" }
+        "psr-4": { "GovTalk\\" : "src/" }
     },
     "require": {
         "php": ">=5.3.2",
