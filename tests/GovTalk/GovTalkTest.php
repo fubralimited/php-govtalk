@@ -206,35 +206,29 @@ class GovTalkTest extends TestCase
 }
 
 /**
-TODO:
-    public function errorCount()
-    public function getErrors()
-    public function getLastError()
-    public function clearErrors()
-    public function responseHasErrors() -1
-
-    public function getTransactionId()
-    public function getFullXMLRequest() -1
-    public function getFullXMLResponse()
-
-    public function getResponseQualifier()
-    public function getGatewayTimestamp()
-    public function getResponseCorrelationId()
-    public function getResponseEndpoint()
-    public function getResponseErrors()
-    public function getResponseBody()
-
-    public function setGovTalkServer($govTalkServer)
-    public function setSchemaLocation($schemaLocation, $validate = null)
-    public function setSchemaValidation($validate)
-
-    public function setMessageCorrelationId($messageCorrelationId)
-    public function setMessageTransformation($transformation)
-
-    public function addTargetOrganisation($targetOrganisation, $force = false)
-    public function deleteTargetOrganisation($targetOrganisation)
-    public function resetTargetOrganisations()
-
-    public function sendDeleteRequest($correlationId = null, $messageClass = null)
-    public function sendListRequest($messageClass = null)
-*/
+ * TODO: The following public functions need tests:
+ * - errorCount
+ * - getErrors
+ * - getLastError
+ * - clearErrors
+ * - responseHasErrors [-1]
+ * - getTransactionId
+ * - getFullXMLRequest [-1]
+ * - getFullXMLResponse
+ * - getResponseQualifier
+ * - getGatewayTimestamp
+ * - getResponseCorrelationId
+ * - getResponseEndpoint
+ * - getResponseErrors
+ * - getResponseBody
+ * - setGovTalkServer
+ * - setSchemaLocation
+ * - setSchemaValidation
+ * - setMessageCorrelationId
+ * - setMessageTransformation
+ * - addTargetOrganisation
+ * - deleteTargetOrganisation
+ * - resetTargetOrganisations
+ * - sendDeleteRequest
+ * - sendListRequest
+ */
