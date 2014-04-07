@@ -2,6 +2,8 @@
 
 **A library for applications which interface with the UK Government Gateway**
 
+[![Build Status](https://travis-ci.org/JustinBusschau/php-govtalk.png?branch=master)](https://travis-ci.org/JustinBusschau/php-govtalk)
+
 The GovTalk Message Envelope is a standard developed by the United Kingdom government as a means of encapsulating
 a range of government XML services in a single standard data format.
 
