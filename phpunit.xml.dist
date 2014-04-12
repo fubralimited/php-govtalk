@@ -8,7 +8,7 @@
          convertWarningsToExceptions="true"
          processIsolation="false"
          stopOnFailure="false"
-         syntaxCheck="false">
+         syntaxCheck="true">
     <testsuites>
         <testsuite name="PHP GovTalk Test Suite">
             <directory>./tests/</directory>

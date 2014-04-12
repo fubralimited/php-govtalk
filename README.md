@@ -34,4 +34,9 @@ $ php composer.phar update
 
 ## Basic usage
 
-TBD
+This library can be extended and used with any one of the gateways that use the GovTalk Message Envelope and the
+Document Submission Protocol. The following libraries currently use / extend GovTalk:
+
+Library | Composer Package | Maintainer
+--- | --- | ---
+[HMRC Gif Aid](https://github.com/justinbusschau/hmrc-gift-aid) | justinbusschau/hmrc-gift-aid | [Justin Busschau](https://github.com/justinbusschau)
