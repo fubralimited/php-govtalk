@@ -11,7 +11,7 @@
 
 namespace GovTalk;
 
-use GovTalk\GovTalk;
+use GovTalk;
 use GovTalk\TestCase;
 use XMLWriter;
 
