@@ -203,6 +203,7 @@ class GovTalkTest extends TestCase
         $this->gtService->sendMessage($preBuiltMessage);
 
         $this->assertSame($preBuiltMessage, $this->gtService->getFullXMLRequest());
+        $this->assertTrue(is_string($this->gtService->getFullXMLResponse()));
     }
 }
 
