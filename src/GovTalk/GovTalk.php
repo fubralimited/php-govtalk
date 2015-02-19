@@ -1369,6 +1369,10 @@ class GovTalk
                         $package->writeElement('Role', 'principal');
                         $package->writeElement('Value', $this->govTalkPassword);
                         break;
+                    case 'MD5':
+                        $package->writeElement('Method', 'MD5');
+                        $package->writeElement('Value', base64_encode(md5(strtolower($this->govTalkPassword), true)));
+                        break;
                 }
                 $package->endElement(); # Authentication
 
