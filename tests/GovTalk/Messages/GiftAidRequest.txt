@@ -36,7 +36,7 @@
   </ChannelRouting>
  </GovTalkDetails>
  <Body>
-<IRenvelope xmlns="http://www.govtalk.gov.uk/taxation/charities/r68/1">
+<IRenvelope xmlns="http://www.govtalk.gov.uk/taxation/charities/r68/2">
  <IRheader>
   <Keys>
    <Key Type="CHARID">AB12345</Key>
