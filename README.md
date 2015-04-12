@@ -5,6 +5,7 @@
 [![Build Status](https://travis-ci.org/JustinBusschau/php-govtalk.png?branch=master)](https://travis-ci.org/JustinBusschau/php-govtalk)
 [![Latest Stable Version](https://poser.pugx.org/justinbusschau/php-govtalk/version.png)](https://packagist.org/packages/justinbusschau/php-govtalk)
 [![Total Downloads](https://poser.pugx.org/justinbusschau/php-govtalk/d/total.png)](https://packagist.org/packages/justinbusschau/php-govtalk)
+[![License](https://poser.pugx.org/justinbusschau/php-govtalk/license.svg)](https://packagist.org/packages/justinbusschau/php-govtalk)
 
 The GovTalk Message Envelope is a standard developed by the United Kingdom government as a means of encapsulating
 a range of government XML services in a single standard data format.
