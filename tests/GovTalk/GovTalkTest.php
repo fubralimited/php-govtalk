@@ -11,8 +11,6 @@
 
 namespace GovTalk;
 
-use GovTalk\TestCase;
-use GovTalk\GovTalk;
 use XMLWriter;
 
 /**
@@ -34,6 +32,9 @@ class GovTalkTest extends TestCase
      * The gateway address
      */
     private $gatewayURL;
+
+    /** @var GovTalk */
+    private $gtService;
 
 
     /**
@@ -197,13 +198,32 @@ class GovTalkTest extends TestCase
 
     public function testSendPrebuiltMessage()
     {
-        $this->setMockHttpResponse('GiftAidResponseAck.txt');
-        $preBuiltMessage = file_get_contents(__DIR__.'/Messages/GiftAidRequest.txt');
-
-        $this->gtService->sendMessage($preBuiltMessage);
-
+        $preBuiltMessage = $this->makeGiftAidSubmission();
         $this->assertSame($preBuiltMessage, $this->gtService->getFullXMLRequest());
         $this->assertTrue(is_string($this->gtService->getFullXMLResponse()));
+    }
+
+    public function testGivenNoSubmission_getResponseQualifier_ReturnsFalse()
+    {
+        $this->assertFalse( $this->gtService->getResponseQualifier() );
+    }
+
+    public function testGivenSubmission_getResponseQualifier_ReturnsAcknowledgement()
+    {
+        $this->makeGiftAidSubmission();
+        $this->assertSame( GovTalk::QUALIFIER_ACKNOWLEDGEMENT, $this->gtService->getResponseQualifier() );
+    }
+
+    /**
+     * @return string
+     */
+    protected function makeGiftAidSubmission()
+    {
+        $this->setMockHttpResponse( 'GiftAidResponseAck.txt' );
+        $preBuiltMessage = file_get_contents( __DIR__ . '/Messages/GiftAidRequest.txt' );
+
+        $this->gtService->sendMessage( $preBuiltMessage );
+        return $preBuiltMessage;
     }
 }
 

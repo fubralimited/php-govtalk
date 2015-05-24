@@ -24,6 +24,8 @@ use Guzzle\Http\Client as HttpClient;
 class GovTalk
 {
 
+    const QUALIFIER_ACKNOWLEDGEMENT = 'acknowledgement';
+
     /* Server related variables. */
 
     /**
@@ -411,7 +413,7 @@ class GovTalk
     public function getResponseQualifier()
     {
         if (isset($this->fullResponseObject)) {
-            return (string) $this->fullResponseObject->Header->MessageDetails->Qualifer;
+            return (string) $this->fullResponseObject->Header->MessageDetails->Qualifier;
         } else {
             return false;
         }
@@ -687,7 +689,7 @@ class GovTalk
         $messageQualifier = strtolower($messageQualifier);
         switch ($messageQualifier) {
             case 'request':
-            case 'acknowledgement':
+            case self::QUALIFIER_ACKNOWLEDGEMENT:
             case 'reponse':
             case 'poll':
             case 'error':
