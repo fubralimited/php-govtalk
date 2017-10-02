@@ -1,0 +1,5 @@
+Instructions
+============
+
+1. Copy config.php.sample to config.php
+2. Edit config.php and set your username and password for the HMRC VAT service.
